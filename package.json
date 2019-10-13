@@ -1,0 +1,22 @@
+{
+  "name": "direwolf-elements",
+  "version": "0.0.0",
+  "description": "Direwolf Space",
+  "author": "direwolf-elements",
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
+    "start:compatibility": "es-dev-server --app-index demo/index.html --compatibility all --node-resolve --open --watch"
+  },
+  "dependencies": {
+    "lit-element": "^2.0.1",
+    "lit-html": "^1.0.0",
+    "y-websocket": "^1.0.4",
+    "yjs": "^13.0.0-99"
+  },
+  "devDependencies": {
+    "es-dev-server": "^1.5.0"
+  }
+}
