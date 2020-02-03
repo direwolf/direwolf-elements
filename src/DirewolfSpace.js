@@ -29,6 +29,10 @@ export class DirewolfSpace extends LitElement {
         type: String,
         reflect: true
       },
+      server: {
+        type: String,
+        reflect: true
+      },
       /**
        * The global state object that is shared amongst all Direwolf nodes.
        */
@@ -44,6 +48,7 @@ export class DirewolfSpace extends LitElement {
 
   constructor() {
     super();
+    this.server = 'ws://localhost:1234';
   }
 
   render() {
@@ -84,7 +89,7 @@ export class DirewolfSpace extends LitElement {
     console.log('connecting to ' + room);
 
     const doc = new Y.Doc()
-    const wsProvider = new WebsocketProvider('ws://localhost:1234', room, doc)
+    const wsProvider = new WebsocketProvider(this.server, room, doc)
 
     wsProvider.on('status', event => {
       console.log(event.status) // logs "connected" or "disconnected"

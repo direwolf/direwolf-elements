@@ -1,6 +1,6 @@
 {
   "name": "direwolf-elements",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Direwolf Space",
   "author": "direwolf-elements",
   "license": "MIT",
@@ -17,7 +17,7 @@
   "dependencies": {
     "lit-element": "^2.2.1",
     "lit-html": "^1.1.2",
-    "yjs": "13.0.1",
+    "yjs": "13.0.2",
     "y-websocket": "1.2.0"
   },
   "devDependencies": {
