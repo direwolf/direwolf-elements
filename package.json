@@ -17,8 +17,8 @@
   "dependencies": {
     "lit-element": "^2.2.1",
     "lit-html": "^1.1.2",
-    "yjs": "13.0.4",
-    "y-websocket": "1.2.1"
+    "y-websocket": "^1.2.5",
+    "yjs": "^13.0.7"
   },
   "devDependencies": {
     "es-dev-server": "^1.36.4"
