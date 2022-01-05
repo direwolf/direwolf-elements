@@ -1,4 +1,4 @@
-import { html, css, LitElement } from 'lit-element';
+import { html, css, LitElement } from 'lit';
 import * as Y from 'yjs'
 import { WebsocketProvider } from 'y-websocket'
 
